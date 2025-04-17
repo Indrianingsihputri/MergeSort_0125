@@ -29,8 +29,30 @@ void input() {
 
 }
 
-void output() {
-    cout << "\nData setelah diurutkan (Merge sort)"
+void mergeSort(int low, int high) {
+    //step 1
+    if (low <= high) {
+        return; //step 1.a
+    }
+
+    int mid = (low + high) / 2; //step 2
+
+    //step 3 
+    mergeSort(low, mid); //step 3.a
+    mergeSort(mid + 1, high); //step 3.b
+
 }
+    
+
+void output() {
+    cout << "\nData setelah diurutkan (Merge sort):";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+
+    cout << endl;
+
+}
+
 
 
