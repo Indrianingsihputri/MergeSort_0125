@@ -17,4 +17,20 @@ void input() {
             cout << "\nMasukkan Panjang array adalah 20";
         }
     }
+
+    cout << "\n==========================";
+    cout << "\nInputkan ISI Elemen Array";
+    cout << "\n==========================" << endl;
+
+    for (int i = 0; i < n; i++ ) {
+        cout << "Array index ke - " << i << ":";
+        cin >> arr[i];
+    }
+
 }
+
+void output() {
+    cout << "\nData setelah diurutkan (Merge sort)"
+}
+
+
